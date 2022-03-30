@@ -6,9 +6,9 @@ namespace DemoDI.Controllers
 {
     public class FromServicesController : Controller
     {
-        public void Index([FromServices] IClienteServices clienteServices)
+        public string Index([FromServices] IClienteServices clienteServices)
         {
-            clienteServices.AdicionarCliente(new Cliente());
+            return clienteServices.AdicionarCliente(new Cliente("Renato"));
         }
     }
 }

@@ -5,9 +5,9 @@ namespace DemoDI.Repository
 {
     public class ClienteRepository : IClienteRepository
     {
-        public void AdicionarCliente(Cliente cliente)
+        public string AdicionarCliente(Cliente cliente)
         {
-            // Faz algo
+            return cliente.ToString();
         }
     }
 }

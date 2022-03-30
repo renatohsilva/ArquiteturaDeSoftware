@@ -4,6 +4,6 @@ namespace DemoDI.Service.Interface
 {
     public interface IClienteServices
     {
-        void AdicionarCliente(Cliente cliente);
+        string AdicionarCliente(Cliente cliente);
     }
 }

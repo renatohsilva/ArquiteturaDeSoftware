@@ -13,9 +13,9 @@ namespace DemoDI.Controllers
             _clienteServices = clienteServices;
         }
 
-        public void Index()
+        public string Index()
         {
-            _clienteServices.AdicionarCliente(new Cliente());
+            return _clienteServices.AdicionarCliente(new Cliente("Renato"));
         }
     }
 }

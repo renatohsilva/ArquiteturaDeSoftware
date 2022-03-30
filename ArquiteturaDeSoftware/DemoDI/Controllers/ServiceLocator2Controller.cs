@@ -6,11 +6,10 @@ namespace DemoDI.Controllers
 {
     public class ServiceLocator2Controller : Controller
     {
-
-        public void Index([FromServices] IServiceProvider serviceProvider)
+        public string? Index([FromServices] IServiceProvider serviceProvider)
         {
             // Retorna null se não estiver registrado
-            serviceProvider.GetRequiredService<IClienteServices>()?.AdicionarCliente(new Cliente());
+            return serviceProvider.GetRequiredService<IClienteServices>()?.AdicionarCliente(new Cliente("Renato"));
         }
     }
 }

@@ -13,9 +13,9 @@ namespace DemoDI.Service
             _clienteRepository = clienteRepository;
         }
 
-        public void AdicionarCliente(Cliente cliente)
+        public string AdicionarCliente(Cliente cliente)
         {
-            _clienteRepository.AdicionarCliente(cliente);
+            return _clienteRepository.AdicionarCliente(cliente);
         }
     }
 }

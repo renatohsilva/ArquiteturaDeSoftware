@@ -13,10 +13,10 @@ namespace DemoDI.Controllers
             _serviceProvider = serviceProvider;
         }
 
-        public void Index()
+        public string? Index()
         {
             // Retorna null se não estiver registrado
-            _serviceProvider.GetRequiredService<IClienteServices>()?.AdicionarCliente(new Cliente());
+            return _serviceProvider.GetRequiredService<IClienteServices>()?.AdicionarCliente(new Cliente("Renato"));
         }
     }
 }

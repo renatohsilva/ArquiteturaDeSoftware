@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="1 - SRP\02 - SRP.Solucao\" />
-    <Folder Include="1 - SRP\01 - SRP.Violacao\" />
     <Folder Include="2 - OCP\03 - OCP.Solucao Extension Methods\" />
     <Folder Include="2 - OCP\02 - OCP.Solucao\" />
     <Folder Include="2 - OCP\01 - OCP.Violacao\" />

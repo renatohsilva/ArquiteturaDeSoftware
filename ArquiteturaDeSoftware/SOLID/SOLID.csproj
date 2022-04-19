@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="1 - SRP\02 - SRP.Solucao\" />
     <Folder Include="2 - OCP\03 - OCP.Solucao Extension Methods\" />
     <Folder Include="2 - OCP\02 - OCP.Solucao\" />
     <Folder Include="2 - OCP\01 - OCP.Violacao\" />
@@ -18,6 +17,10 @@
     <Folder Include="4 - ISP\01 - ISP.Violacao\" />
     <Folder Include="5 - DIP\02 - DIP.Solucao\Interfaces\" />
     <Folder Include="5 - DIP\01 - DIP.Violacao\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
 </Project>

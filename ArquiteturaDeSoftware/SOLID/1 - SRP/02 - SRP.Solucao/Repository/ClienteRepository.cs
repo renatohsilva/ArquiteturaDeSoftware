@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SOLID._1___SRP._02___SRP.Solucao
+namespace SOLID.SRP.SOLUCAO
 {
     public class ClienteRepository
     {

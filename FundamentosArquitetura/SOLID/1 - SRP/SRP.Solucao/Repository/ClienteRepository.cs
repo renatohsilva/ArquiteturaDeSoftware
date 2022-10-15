@@ -21,7 +21,7 @@ namespace SOLID.SRP.SOLUCAO
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "INSERT INTO CLIENTE (NOME, EMAIL CPF, DATACADASTRO) VALUES (@nome, @email, @cpf, @dataCad))";
 
-                cmd.Parameters.AddWithValue("nome", cliente.Nome);
+                cmd.Parameters.AddWithValue("nome", cliente.Name);
                 cmd.Parameters.AddWithValue("email", cliente.Email);
                 cmd.Parameters.AddWithValue("cpf", cliente.Cpf);
                 cmd.Parameters.AddWithValue("dataCad", cliente.DataCadastro);

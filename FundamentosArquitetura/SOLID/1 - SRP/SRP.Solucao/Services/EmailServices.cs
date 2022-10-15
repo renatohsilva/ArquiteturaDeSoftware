@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace SOLID.SRP.SOLUCAO
 {
-    public static class EmailServices
+    public static class EmailService
     {
-        public static void Enviar(string de, string para, string assunto, string mensagem)
+        public static void Enviar(string from, string to, string subject, string message)
         {
-            var mail = new MailMessage(de, para);
+            var mail = new MailMessage(from, to);
             var client = new SmtpClient
             {
                 Port = 25,
@@ -20,8 +20,8 @@ namespace SOLID.SRP.SOLUCAO
                 Host = "smtp.google.com"
             };
 
-            mail.Subject = assunto;
-            mail.Body = mensagem;
+            mail.Subject = subject;
+            mail.Body = message;
             client.Send(mail);
         }
     }

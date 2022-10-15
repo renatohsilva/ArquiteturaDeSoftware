@@ -13,10 +13,10 @@ namespace SOLID.SRP.SOLUCAO
             if (!cliente.Validar())
                 return "Dados inválidos";
 
-            var repo = new ClienteRepository();
-            repo.AdicionarCliente(cliente);
+            var repository = new ClienteRepository();
+            repository.AdicionarCliente(cliente);
 
-            EmailServices.Enviar("empresa@empresa.com", cliente.Email.Endereco, "Bem Vindo", "Parabéns está Cadastrado");
+            EmailService.Enviar("empresa@empresa.com", cliente.Email.Endereco, "Bem Vindo", "Parabéns está Cadastrado");
 
             return "Cliente cadastrado com sucesso";
         }

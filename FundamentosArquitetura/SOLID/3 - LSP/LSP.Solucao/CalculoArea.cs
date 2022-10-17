@@ -21,7 +21,7 @@ namespace SOLID.LSP.Solucao
 
         public static void Calcular()
         {
-            var quad = new Quadrado(5, 5);
+            var quad = new Quadrado(5);
             var ret = new Retangulo(10, 5);
 
             ObterAreaParalelogramo(quad);

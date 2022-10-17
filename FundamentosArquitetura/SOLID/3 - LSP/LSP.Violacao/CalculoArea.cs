@@ -27,15 +27,15 @@ namespace SOLID.LSP.Violacao
                 Largura = 5
             };
 
-            var ret = new Retangulo()
-            {
-                Altura = 10,
-                Largura = 5
-            };
+            //var ret = new Retangulo()
+            //{
+            //    Altura = 10,
+            //    Largura = 5
+            //};
 
             ObterAreaRetangulo(quad);
 
-            ObterAreaRetangulo(ret);
+            //ObterAreaRetangulo(ret);
         }
     }
 }

@@ -8,11 +8,10 @@ namespace SOLID.LSP.Solucao
 {
     public class Quadrado : Paralelogramo
     {
-        public Quadrado(int altura, int largura)
-            : base(altura, largura)
+        public Quadrado(int lado)
+            : base(lado, lado)
         {
-            if (largura != altura)
-                throw new ArgumentException("Os dois lados do quadrado precisam ser iguais");
+          
         }
     }
 }
